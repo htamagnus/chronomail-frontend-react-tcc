@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './InitialPage.module.scss';
-import hourglass from '../assets/images/hourglass.png';
-import Form from '../components/Form/FormEmail';
-import videoBackground from '../assets/background.mp4';
+import hourglass from '../../assets/images/hourglass.png';
+import Form from '../../components/Form/FormEmail';
+import videoBackground from '../../assets/background.mp4';
 
 export default function InitialPage() {
     return (

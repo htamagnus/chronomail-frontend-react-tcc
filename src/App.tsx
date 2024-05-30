@@ -1,9 +1,16 @@
-import InitialPage from './pages/InitialPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import InitialPage from './pages/InitialPage/InitialPage';
 import './styles/stylesGlobals.scss' 
+import SuccessPage from './pages/SuccessPage/SuccessPage';
 
 function App() {
   return (
-      <InitialPage />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<InitialPage />} />
+      <Route path="/success" element={<SuccessPage />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 

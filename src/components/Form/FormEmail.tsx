@@ -7,6 +7,7 @@ import { FormEmail } from "../../interfaces/FormEmail";
 import { FormEmailResolver } from "../../validations/FormEmailValidation";
 import Button from "../Button/Button";
 import warningIcon from "../../assets/images/warning-icon.svg";
+import { useNavigate } from "react-router-dom";
 
 interface FormProps {}
 
@@ -19,10 +20,13 @@ const Form: React.FC<FormProps> = () => {
     reset,
   } = formMethods;
 
+  const navigate = useNavigate();
+
   async function onSubmit(values: FormEmail) {
     const { status } = await MailServices.sendEmail(values);
     if (status === 201) {
       reset();
+      navigate("/success");
     }
   }
 
