@@ -50,7 +50,7 @@ const SuccessPage: React.FC = () => {
             },
           ]}
         />
-        <h1>{message}</h1>
+        <h1 className={styles.text}>{message}</h1>
       </div>
     </div>
   );

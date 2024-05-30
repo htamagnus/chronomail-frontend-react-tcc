@@ -20,10 +20,22 @@
 .animation {
   position: relative;
   z-index: 1; /* Garante que a animação fique na frente */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
+.text {
   font-size: 34px;
   font-weight: 500;
   color: #282828;
+}
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 26px;
+    margin: 20px;
+    text-align: center;
+  }
 }

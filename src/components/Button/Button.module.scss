@@ -16,3 +16,9 @@
       background-color: #6c4bb9;
     }
   }
+
+  @media (max-width: 600px) {
+    .button {
+      width: 300px;
+    }
+  }

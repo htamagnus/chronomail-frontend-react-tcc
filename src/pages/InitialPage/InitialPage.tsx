@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './InitialPage.module.scss';
 import hourglass from '../../assets/images/hourglass.png';
 import Form from '../../components/Form/FormEmail';
@@ -12,9 +11,9 @@ export default function InitialPage() {
                 Your browser does not support the video tag.
             </video>
             <div className={styles.content}>
-                <div className={styles.container__logo}>
-                    <h1 className={styles.container__title}>ChronoMail</h1>
-                    <img src={hourglass} className={styles.container__image} alt="" />
+                <div className={styles.content__logo}>
+                    <h1 className={styles.content__title}>ChronoMail</h1>
+                    <img src={hourglass} className={styles.content__image} alt="" />
                 </div>
                 <div className={styles.texts}>
                     <p>Agende seus e-mails. Acerte o momento.</p>

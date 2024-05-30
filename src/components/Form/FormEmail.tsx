@@ -96,7 +96,7 @@ const Form: React.FC<FormProps> = () => {
             </div>
           )}
 
-          <Button text="Enviar" />
+          <Button text="Agendar" />
         </form>
       </div>
     </FormProvider>
