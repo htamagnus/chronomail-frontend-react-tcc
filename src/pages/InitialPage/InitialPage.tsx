@@ -18,7 +18,7 @@ export default function InitialPage() {
     }, []);
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.videoFallback}`}>
             <div className={styles.background}>
                 <video className={styles.backgroundVideo} autoPlay loop muted playsInline>
                     <source src={videoBackground} type="video/mp4" />
