@@ -81,4 +81,30 @@
       }
     }
   }
+
+  @media (max-width: 360px) {
+    .card {
+      max-width: 190px;
+      padding: 30px 70px 30px 70px;
+
+      .form {
+        gap: 20px;
+        
+        label {
+          font-weight: bold;
+          align-self: flex-start;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        
+        input,
+        textarea {
+          width: 300px;
+        }
+        
+      }
+    }
+  }
+
+
   
