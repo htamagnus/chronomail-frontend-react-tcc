@@ -14,15 +14,18 @@ export default function InitialPage() {
             video.onerror = () => {
                 container.classList.add(styles.videoFallback);
             };
+
+            video.onloadeddata = () => {
+                container.classList.remove(styles.videoFallback);
+            };
         }
     }, []);
 
     return (
-        <div className={`${styles.container} ${styles.videoFallback}`}>
+        <div className={styles.container}>
             <div className={styles.background}>
                 <video className={styles.backgroundVideo} autoPlay loop muted playsInline>
                     <source src={videoBackground} type="video/mp4" />
-                    Your browser does not support the video tag.
                 </video>
                 <img src={backgroundFallback} alt="Background Fallback" className={styles.backgroundImage} />
             </div>
