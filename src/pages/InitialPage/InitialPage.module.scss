@@ -6,15 +6,12 @@
 
     .backgroundVideo {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         z-index: -1;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
     }
 
     .content {
@@ -31,12 +28,12 @@
             display: flex;
             margin: 0 auto;
         }
-    
+
         &__image {
             padding-top: 38px;
             padding-left: 6px;
         }
-    
+
         &__title {
             font-family: $primary-font;
             font-size: 100px;
@@ -87,12 +84,12 @@
         &__logo {
             display: flex;
         }
-    
+
         &__image {
             width: 40px;
             height: 60px;
         }
-    
+
         &__title {
             font-family: $primary-font;
             font-size: 70px !important;
@@ -113,7 +110,7 @@
             font-size: 25px;
             font-weight: 500;
         }
-    
+
         p:nth-child(2) {
             margin-top: 18px;
             font-size: 19px;
