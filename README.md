@@ -208,7 +208,7 @@ npm install
 
 3. **Configurações de back-end**:
 - Certifique-se de ja ter configurado o back-end a partir desse [repositório](https://github.com/htamagnus/chronomail-backend-nestjs-tcc)
-
+- Crie um .env com o valor para ```REACT_APP_BASE_URL```
 
 ---
 
