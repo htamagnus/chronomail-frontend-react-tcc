@@ -20,7 +20,7 @@
 </br>
 
 [Link](https://chronomail-frontend-react-tcc.vercel.app/) para acessar o projeto
-(🚧 em construção)
+(🚧 back-end temporariamente fora do ar pois expirou o período grátis de hospedagem do site)
 
 </br>
 
